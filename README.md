@@ -16,7 +16,7 @@ We highly recommend you charge your laptop and bring it with you. But before the
 
 Please install: 
 
-- [R for your operating system](https://www.r-project.org/) 
+- [R for your operating system](https://www.r-project.org/) (R version 4.0.0 or higher)
 
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/)  
 
@@ -25,6 +25,16 @@ To initialize your system, open RStudio and run the following script:
 ```
 install.packages("EdSurvey")
 library(EdSurvey)
+```
+
+If you already have R and EdSurvey set up on your computer, please check the `EdSurvey` version by:
+```
+packageVersion("EdSurvey")
+```
+
+It should be `4.0.4`. If not, please update your `EdSurvey` package:
+```
+update.packages("EdSurvey")
 ```
 
 Please also check out our EdSurvey eBook and familiarize yourself with our EdSurvey package: https://naep-research.airprojects.org/Portals/0/EdSurvey_A_Users_Guide/_book/index.html
